@@ -14,7 +14,6 @@ main(List<String> args) {
         allowed: ['stdout', 'github'],
         defaultsTo: 'stdout')
     ..addOption('pull-request-id',
-        abbr: 'prid',
         help: 'the ID of the concerned pull request on Github',
         defaultsTo: '0')
     ..addOption('token', help: 'the github auth token', defaultsTo: '')
