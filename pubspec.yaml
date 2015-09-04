@@ -1,0 +1,7 @@
+name: code_checker_test
+version: 0.0.1
+description: A simple console application.
+dependencies:
+  github: ^2.2.3+1
+  args: ^0.13.2
+  logging: ^0.11.1+1
