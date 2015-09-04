@@ -4,7 +4,7 @@ import 'package:logging/logging.dart';
 
 final Logger _logger = new Logger('code_checker_test');
 
-// 1
+// 2
 main(List<String> args) {
   print(args);
   _setupLogger();
