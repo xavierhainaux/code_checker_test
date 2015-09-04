@@ -9,11 +9,14 @@ main(List<String> args) {
 
   var parser = new ArgParser()
     ..addOption('out',
+        abbr: 'o',
         help: 'When the result should be send',
         allowed: ['stdout', 'github'],
         defaultsTo: 'stdout')
     ..addOption('pull-request-id',
-        help: 'the ID of the concerned pull request on Github', defaultsTo: '0')
+        abbr: 'prid',
+        help: 'the ID of the concerned pull request on Github',
+        defaultsTo: '0')
     ..addOption('token', help: 'the github auth token', defaultsTo: '')
     ..addOption('repo',
         help: 'the github repository : user/name',
