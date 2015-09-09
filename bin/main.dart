@@ -28,6 +28,7 @@ main(List<String> args) {
 
     String finalComment = ':white_check_mark: ${new DateTime.now()}';
 
+    print(argResults['pull-request-id']);
     postCommentOnGithub(
         repository: argResults['repo'],
         token: argResults['token'],
