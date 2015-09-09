@@ -14,8 +14,7 @@ main(List<String> args) {
         allowed: ['stdout', 'github'],
         defaultsTo: 'stdout')
     ..addOption('pull-request-id',
-        help: 'the ID of the concerned pull request on Github',
-        defaultsTo: '0')
+        help: 'the ID of the concerned pull request on Github', defaultsTo: '0')
     ..addOption('token', help: 'the github auth token', defaultsTo: '')
     ..addOption('repo',
         help: 'the github repository : user/name',
@@ -37,7 +36,10 @@ main(List<String> args) {
   }
 }
 
-postCommentOnGithub({String repository, String token, int pullRequestId,
+postCommentOnGithub(
+    {String repository,
+    String token,
+    int pullRequestId,
     String comment}) async {
   try {
     var github = createGitHubClient(auth: new Authentication.withToken(token));
